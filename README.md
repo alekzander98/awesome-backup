@@ -30,3 +30,5 @@
 - APTV                电视直播
 - AppCleaner          软件卸载
 - calibre             书籍管理
+- Bob                 翻译&OCR
+- uPic                图床
