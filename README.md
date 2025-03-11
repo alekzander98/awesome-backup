@@ -33,3 +33,4 @@
 - Bob                 翻译&OCR
 - uPic                图床
 - ChatWise            AI对话
+- PopClip             划词增强工具
