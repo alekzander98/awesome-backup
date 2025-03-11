@@ -32,3 +32,4 @@
 - calibre             书籍管理
 - Bob                 翻译&OCR
 - uPic                图床
+- ChatWise            AI对话
