@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>单摆动画</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #pendulumCanvas {
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="pendulumCanvas"></canvas>
+
+    <script>
+        // 获取Canvas元素和上下文
+        const canvas = document.getElementById('pendulumCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // 初始化Canvas尺寸（根据窗口调整，最大800x600）
+        function resizeCanvas() {
+            canvas.width = Math.min(window.innerWidth * 0.8, 800);
+            canvas.height = Math.min(window.innerHeight * 0.8, 600);
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // 单摆参数设置
+        const params = {
+            pivotX: canvas.width / 2,       // 摆轴水平中心
+            pivotY: canvas.height / 4,      // 摆轴垂直位置（顶部1/4处）
+            length: canvas.height / 2.5,    // 摆长（约为Canvas高度的2/5）
+            ballRadius: 20,                 // 摆球半径
+            maxAngle: 30 * Math.PI / 180,   // 最大摆角（30度转弧度）
+            angularVelocity: 1.2,           // 角频率（控制摆动速度）
+            lineColor: '#666',              // 摆线颜色
+            ballColor: '#ff4444'            // 摆球颜色
+        };
+
+        // 动画时间记录
+        let startTime = null;
+
+        // 动画循环函数
+        function animate(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const elapsed = (timestamp - startTime) / 1000;  // 转换为秒
+
+            // 清空画布
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // 计算当前摆角（简谐运动公式）
+            const currentAngle = params.maxAngle * Math.cos(params.angularVelocity * elapsed);
+
+            // 计算摆球坐标
+            const ballX = params.pivotX + params.length * Math.sin(currentAngle);
+            const ballY = params.pivotY + params.length * Math.cos(currentAngle);
+
+            // 绘制摆线
+            ctx.beginPath();
+            ctx.strokeStyle = params.lineColor;
+            ctx.lineWidth = 2;
+            ctx.moveTo(params.pivotX, params.pivotY);
+            ctx.lineTo(ballX, ballY);
+            ctx.stroke();
+
+            // 绘制摆球
+            ctx.beginPath();
+            ctx.arc(ballX, ballY, params.ballRadius, 0, 2 * Math.PI);
+            ctx.fillStyle = params.ballColor;
+            ctx.shadowColor = 'rgba(0,0,0,0.3)';
+            ctx.shadowBlur = 10;
+            ctx.shadowOffsetX = 5;
+            ctx.shadowOffsetY = 5;
+            ctx.fill();
+
+            // 更新摆轴位置（窗口尺寸变化时调整）
+            params.pivotX = canvas.width / 2;
+            params.pivotY = canvas.height / 4;
+            params.length = canvas.height / 2.5;
+
+            // 递归调用动画
+            requestAnimationFrame(animate);
+        }
+
+        // 启动动画
+        requestAnimationFrame(animate);
+    </script>
+</body>
+</html>
