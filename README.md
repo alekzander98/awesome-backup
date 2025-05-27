@@ -27,10 +27,16 @@
 - Espanso             输入快捷替换
 - Eagle               素材管理
 - ClashX Pro          代理
+- Clash Verge         代理
+- Mihomo Party        代理
 - APTV                电视直播
 - AppCleaner          软件卸载
 - calibre             书籍管理
 - Bob                 翻译&OCR
 - uPic                图床
-- ChatWise            AI对话
+- ChatWise            AI工具
+- Cherry Studio       AI工具
 - PopClip             划词增强工具
+- Bitwarden           密码管理
+- Stats               硬件监控
+- StreamMusic         音乐
