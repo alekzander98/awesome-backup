@@ -21,7 +21,7 @@
 - KeepingYouAwake     保持唤醒
 - Itsycal             日历工具
 - iTerm               终端
-- Infuse              NAS-Emby
+- SenPlayer           媒体播放器
 - IINA                媒体播放器
 - Google Chrome       浏览器
 - Espanso             输入快捷替换
