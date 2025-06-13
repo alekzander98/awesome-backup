@@ -28,6 +28,7 @@
 | Reeder              | RSS阅读器      |
 | Typora              | Markdown 编辑器|
 | Sublime Text        | 文本编辑器     |
+| PixPin              | 截图 & OCR    |
 
 ---
 
@@ -63,6 +64,8 @@
 | Yamby               | 媒体播放器     |
 | SenPlayer           | 媒体播放器     |
 | StreamMusic         | 音乐播放器     |
+| OtoFlow             | 音乐播放器     |
+| plappa              | 有声书        |
 
 ---
 
@@ -70,9 +73,11 @@
 
 | 名称                | 说明           |
 |---------------------|----------------|
-| Cherry Studio       | AI 工具        |
-| ChatWise            | AI 工具        |
-| RikkaHub            | AI 工具        |
+| Cherry Studio       | AI Chat & Knowledge |
+| ChatWise            | AI Chat       |
+| RikkaHub            | AI Chat        |
+| OpenCat             | AI Chat        |
+| LobeChat            | AI Chat        |
 
 ---
 
