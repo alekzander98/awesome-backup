@@ -29,6 +29,7 @@
 | Typora              | Markdown 编辑器|
 | Sublime Text        | 文本编辑器     |
 | PixPin              | 截图 & OCR    |
+| Rectangle           | 窗口管理       |
 
 ---
 
