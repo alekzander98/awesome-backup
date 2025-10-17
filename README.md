@@ -41,6 +41,8 @@
 | Sourcetree          | Git GUI        |
 | Termius             | SSH 工具       |
 | Visual Studio Code  | IDE            |
+| Claude Code         | Code CLI        |
+| iFlow               | Code CLI        |
 
 ---
 
