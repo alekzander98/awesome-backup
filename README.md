@@ -51,8 +51,8 @@
 | 名称                | 说明           |
 |---------------------|----------------|
 | ClashX Pro          | 代理工具       |
-| Clash Verge         | 代理工具       |
 | Mihomo Party        | 代理工具       |
+| Clash Verge         | 代理工具       |
 | FlClash             | 代理工具       |
 | SwitchHosts         | Host 管理     |
 
