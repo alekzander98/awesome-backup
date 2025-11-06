@@ -90,3 +90,14 @@
 |---------------------|----------------|
 | Eagle               | 素材管理       |
 | pap.er              | Mac壁纸       |
+
+### 🎨 脚本类（User Script）
+
+| 名称                 |
+|---------------------|
+| [AI 验证码自动识别填充](https://greasyfork.org/scripts/540822) |
+| [哔哩哔哩增强脚本](https://github.com/the1812/Bilibili-Evolved) |
+| [哔哩哔哩增强脚本](https://github.com/the1812/Bilibili-Evolved) |
+| [GitHub to DeepWiki](https://greasyfork.org/scripts/534213) |
+| [官种保种统计](https://greasyfork.org/zh-CN/scripts/432969) |
+| [站点魔力计算器](https://greasyfork.org/en/scripts/439369-pt%E7%AB%99%E7%82%B9%E9%AD%94%E5%8A%9B%E8%AE%A1%E7%AE%97%E5%99%A8) |
