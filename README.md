@@ -30,6 +30,7 @@
 | Sublime Text        | 文本编辑器     |
 | PixPin              | 截图 & OCR    |
 | Rectangle           | 窗口管理       |
+| uTools              | 工具平台       |
 
 ---
 
